@@ -1,0 +1,1 @@
+print(sum([eval(n)for n in open("i")]))
