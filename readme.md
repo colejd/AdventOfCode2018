@@ -1,0 +1,1 @@
+These are my solutions for the 2018 Advent of Code.
