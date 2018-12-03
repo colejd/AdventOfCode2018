@@ -6,7 +6,7 @@ def get_solution():
         for line in fp:
             total += eval(line)
 
-    return "{0}".format(total)
+    return total
 
 
 print(get_solution())
