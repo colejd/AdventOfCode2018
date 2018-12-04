@@ -1,7 +1,6 @@
-from collections import*
-t,f=0,defaultdict(int)
+t,f=0,{}
 while 1:
  for i in[eval(n)for n in open("i")]:
   t+=i
-  if f[t]!=0:print(t);exit()
-  f[t]+=1
+  if f.get(t,0)!=0:print(t);exit()
+  f[t]=f.get(t,0)+1
