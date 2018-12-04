@@ -1,1 +1,1 @@
-print(sum([eval(n)for n in open("i")]))
+print(sum(map(int,open("i"))))
