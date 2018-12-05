@@ -1,6 +1,9 @@
 #!/bin/bash
 
-folder="day_$1"
+#DD=$(date +%d)
+DD=$1
+
+folder="day_$DD"
 
 mkdir "$folder"
 cp template.py "$folder/day$1part1.py"
