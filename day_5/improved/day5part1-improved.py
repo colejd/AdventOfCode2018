@@ -1,7 +1,5 @@
-
-def get_input():
-    with open("input.txt", "r") as myfile:
-        return myfile.read().replace('\n', '')
+from aoc_helpers.perf_helpers import *
+from aoc_helpers.input_helpers import *
 
 
 def do_pass(line):
@@ -18,11 +16,9 @@ def do_pass(line):
     return stack
 
 
+@timeit
 def get_solution():
-    line = list(get_input())
-    print(input)
-    result = do_pass(line)
-    return len(result)
+    return len(do_pass(input_string()))
 
 
 print(get_solution())

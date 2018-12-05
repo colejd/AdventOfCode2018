@@ -1,8 +1,6 @@
+from aoc_helpers.perf_helpers import *
+from aoc_helpers.input_helpers import *
 import string
-
-def get_input():
-    with open("input.txt", "r") as myfile:
-        return myfile.read().replace('\n', '')
 
 
 def do_pass(line, deleted_polymer):
@@ -22,10 +20,9 @@ def do_pass(line, deleted_polymer):
     return len(stack)
 
 
+@timeit
 def get_solution():
-    line = list(get_input())
-
-    return min(map(lambda polymer: do_pass(line, deleted_polymer=polymer), string.ascii_lowercase))
+    return min(map(lambda polymer: do_pass(input_string(), deleted_polymer=polymer), string.ascii_lowercase))
 
 
 print(get_solution())
