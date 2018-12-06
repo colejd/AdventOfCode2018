@@ -5,11 +5,6 @@ import string
 import time
 
 
-def get_lines():
-    with open("input.txt") as fp:
-        return [line[:-1] for line in fp]
-
-
 @timeit
 def get_solution():
     data = input_lines()
