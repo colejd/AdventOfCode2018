@@ -99,3 +99,5 @@ def get_solution():
 
 
 print(get_solution())
+
+# Answer is 3660
